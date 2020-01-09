@@ -62,18 +62,18 @@ func (b Buildpack) doBuild(build build.Build) (int, error) {
 }
 
 func (b Buildpack) Detect() {
-	detect, err := detect.DefaultDetect()
-	if err != nil {
-		_, _ = fmt.Fprintf(os.Stderr, "Failed to initialize Detect: %s\n", err)
-		os.Exit(Error_Initialization)
-	}
-
-	if code, err := b.doDetect(detect); err != nil {
-		detect.Logger.Info(err.Error())
-		os.Exit(code)
-	} else {
-		os.Exit(code)
-	}
+	//detect, err := detect.DefaultDetect()
+	//if err != nil {
+	//	_, _ = fmt.Fprintf(os.Stderr, "Failed to initialize Detect: %s\n", err)
+	//	os.Exit(Error_Initialization)
+	//}
+	//
+	//if code, err := b.doDetect(detect); err != nil {
+	//	detect.Logger.Info(err.Error())
+	//	os.Exit(code)
+	//} else {
+	//	os.Exit(code)
+	//}
 }
 
 func (b Buildpack) doDetect(d detect.Detect) (int, error) {
