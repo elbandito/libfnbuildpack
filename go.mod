@@ -1,4 +1,4 @@
-module github.com/projectriff/libfnbuildpack
+module github.com/elbandito/libfnbuildpack
 
 go 1.13
 
