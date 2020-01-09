@@ -70,9 +70,9 @@ func (b Buildpack) Detect() {
 
 	if code, err := b.doDetect(detect); err != nil {
 		detect.Logger.Info(err.Error())
-		os.Exit(code)
+		//os.Exit(code)
 	} else {
-		os.Exit(code)
+		//os.Exit(code)
 	}
 }
 
